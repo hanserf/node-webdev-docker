@@ -11,9 +11,11 @@ RUN \
   unzip \
   tar \
   make \
-  nodejs \
-  npm \
   tree && \
+  curl -sL https://deb.nodesource.com/setup_15.3 -o nodesource_setup.sh && \
+  cat nodesource_setup.sh &&\
+  bash nodesource_setup.sh && \
+  apt install nodejs npm && \
   npm i express \
   express-session \
   express-ejs-layouts \
