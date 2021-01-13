@@ -11,6 +11,8 @@ RUN \
   unzip \
   tar \
   make \
+  nodejs \
+  npm \
   tree && \
   npm i express \
   express-session \
