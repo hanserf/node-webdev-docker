@@ -14,7 +14,7 @@ RUN \
   build-essential \
   make \
   tree && \
-  curl -sL https://deb.nodesource.com/setup_15.3 -o nodesource_setup.sh && \
+  curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh && \
   cat nodesource_setup.sh &&\
   bash nodesource_setup.sh && \
   apt install nodejs npm && \
