@@ -7,9 +7,11 @@ RUN \
   apt-get install -y \
   apt-utils \
   wget \
+  curl \
   gnupg \
   unzip \
   tar \
+  build-essential \
   make \
   tree && \
   curl -sL https://deb.nodesource.com/setup_15.3 -o nodesource_setup.sh && \
