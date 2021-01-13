@@ -4,7 +4,7 @@ LABEL \
   node.version=15.5.1 \
   debian.version=buster
 
-WORKDIR /opt/node_app
+WORKDIR /usr/src/app
 
 RUN \
   apt-get update && \
