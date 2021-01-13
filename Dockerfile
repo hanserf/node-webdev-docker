@@ -17,11 +17,11 @@ RUN \
   tree && \
   wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add - && \
   echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list && \
-  sudo apt-get update && \
-  sudo apt-get install -y mongodb-org && \
-  sudo systemctl daemon-reload && \
-  sudo systemctl start mongod && \
-  sudo systemctl enable mongod && \
+  apt-get update && \
+  apt-get install -y mongodb-org && \
+  systemctl daemon-reload && \
+  systemctl start mongod && \
+  systemctl enable mongod && \
   npm i express \
   express-session \
   express-ejs-layouts \
