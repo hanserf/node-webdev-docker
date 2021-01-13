@@ -30,9 +30,6 @@ RUN \
   mongoose \
   bcrypt \
   ejs
-  
-  sudo apt-get install -y nodejs` to install Node.js 14.x and npm
-## You may also need development tools to build native addons:
-     sudo apt-get install gcc g++ make
+ 
   
 CMD ["/bin/bash"]
