@@ -15,14 +15,9 @@ RUN \
   gcc \
   g++ \
   make \
-  tree
-RUN \
-  curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh && \
-  cat nodesource_setup.sh | sed -e 's/\<sudo\>//g' > nodeinstall_cleaned.sh && \
-  cat nodeinstall_cleaned.sh | grep sudo && \
-  bash nodeinstall_cleaned.sh 
-RUN \
-  apt install nodejs npm && \
+  tree \ 
+  nodejs\
+  npm && \
   npm i express \
   express-session \
   express-ejs-layouts \
