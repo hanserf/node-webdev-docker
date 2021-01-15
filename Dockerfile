@@ -17,7 +17,7 @@ RUN \
   make \
   tree && \
   bash install_node_script.sh && \ 
-  nodejs\
+  apt-get install -y nodejs\
   npm && \
   npm i express \
   express-session \
