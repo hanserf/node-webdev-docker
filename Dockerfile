@@ -17,8 +17,7 @@ RUN \
   make \
   tree && \
   bash install_node_script.sh && \ 
-  apt-get install -y nodejs\
-  npm && \
+  apt-get install -y nodejs && \
   npm i express \
   express-session \
   express-ejs-layouts \
