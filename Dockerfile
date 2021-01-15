@@ -1,7 +1,7 @@
 FROM mongo
 
 WORKDIR /usr/src/app
-
+COPY install_node_script.sh .
 RUN \
   apt-get update && \
   apt-get install -y \
@@ -15,7 +15,8 @@ RUN \
   gcc \
   g++ \
   make \
-  tree \ 
+  tree && \
+  bash install_node_script.sh && \ 
   nodejs\
   npm && \
   npm i express \
